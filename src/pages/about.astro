@@ -1,8 +1,14 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { profile, skills, experience, certifications, education, languages } from '../data/resume';
+import verifiedCerts from '../data/certifications.json';
 
 const skillGroups = Object.entries(skills);
+
+const dateFormatter = new Intl.DateTimeFormat('en-US', { month: 'short', year: 'numeric' });
+function formatDate(iso: string | null) {
+  return iso ? dateFormatter.format(new Date(iso)) : null;
+}
 ---
 
 <BaseLayout
@@ -48,7 +54,42 @@ const skillGroups = Object.entries(skills);
       ))}
     </div>
 
-    <h2 class="mt-14 text-xl font-bold text-slate-900 dark:text-slate-100">Certifications</h2>
+    <h2 class="mt-14 text-xl font-bold text-slate-900 dark:text-slate-100">Verified Certificates</h2>
+    <p class="mt-2 text-sm text-slate-500 dark:text-slate-400">
+      {verifiedCerts.length} certificates, verifiable on Coursera.
+    </p>
+    <div class="mt-6 grid gap-4 sm:grid-cols-2">
+      {verifiedCerts.map((cert) => (
+        <a
+          href={cert.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group flex items-start gap-4 rounded-xl border border-slate-200 p-4 transition-colors hover:border-cyan-400 dark:border-slate-800 dark:hover:border-cyan-500"
+        >
+          {cert.logo && (
+            <img
+              src={cert.logo}
+              alt={`${cert.issuer} logo`}
+              width="40"
+              height="40"
+              loading="lazy"
+              class="h-10 w-10 shrink-0 rounded-md border border-slate-100 bg-white object-contain p-1 dark:border-slate-800"
+            />
+          )}
+          <div class="min-w-0">
+            <h3 class="font-medium leading-snug text-slate-800 group-hover:text-cyan-700 dark:text-slate-200 dark:group-hover:text-cyan-400">
+              {cert.title}
+            </h3>
+            <p class="mt-1 text-sm text-slate-500 dark:text-slate-400">
+              {cert.issuer} &middot; {cert.platform}
+              {formatDate(cert.date) && <> &middot; {formatDate(cert.date)}</>}
+            </p>
+          </div>
+        </a>
+      ))}
+    </div>
+
+    <h2 class="mt-14 text-xl font-bold text-slate-900 dark:text-slate-100">Other Certifications</h2>
     <ul class="mt-6 grid gap-2 sm:grid-cols-2">
       {certifications.map((cert) => (
         <li class="flex items-center gap-2 rounded-lg border border-slate-200 px-4 py-3 text-sm text-slate-700 dark:border-slate-800 dark:text-slate-300">

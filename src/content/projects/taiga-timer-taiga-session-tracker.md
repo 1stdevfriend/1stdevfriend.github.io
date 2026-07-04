@@ -1,5 +1,6 @@
 ---
 title: "Taiga Timer / Taiga Session Tracker"
+logo: "/projects/logos/taiga-timer-taiga-session-tracker.png"
 org: "koders-in / koders_internal"
 category: "Internal Tool / Productivity"
 tags: ["Node.js", "Express", "React", "Vite", "Tailwind CSS", "REST API", "JWT Authentication", "NocoDB", "SQLite", "Internal Tool", "Webhooks", "Electron", "Supabase", "PostgreSQL", "MariaDB", "Docker"]

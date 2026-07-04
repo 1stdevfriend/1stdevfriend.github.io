@@ -1,0 +1,92 @@
+[
+  {
+    "title": "Advanced Git and GitHub Features",
+    "issuer": "Packt",
+    "logo": "/certs/logos/packt.png",
+    "image": "/certs/images/advanced-git-and-github-features.jpeg",
+    "date": "2026-07-01",
+    "url": "https://www.coursera.org/account/accomplishments/verify/FJO3COZT8K80",
+    "code": "FJO3COZT8K80",
+    "platform": "Coursera"
+  },
+  {
+    "title": "Python for the Absolute Beginner",
+    "issuer": "KodeKloud",
+    "logo": "/certs/logos/kodekloud.png",
+    "image": "/certs/images/python-for-the-absolute-beginner.jpeg",
+    "date": "2026-06-29",
+    "url": "https://www.coursera.org/account/accomplishments/verify/E4AYUDQ2L85B",
+    "code": "E4AYUDQ2L85B",
+    "platform": "Coursera"
+  },
+  {
+    "title": "Jenkins for Beginners",
+    "issuer": "KodeKloud",
+    "logo": "/certs/logos/kodekloud.png",
+    "image": "/certs/images/jenkins-for-beginners.jpeg",
+    "date": "2026-06-28",
+    "url": "https://www.coursera.org/account/accomplishments/verify/8J9363HW6D6B",
+    "code": "8J9363HW6D6B",
+    "platform": "Coursera"
+  },
+  {
+    "title": "Docker Basics for DevOps",
+    "issuer": "KodeKloud",
+    "logo": "/certs/logos/kodekloud.png",
+    "image": "/certs/images/docker-basics-for-devops.jpeg",
+    "date": "2026-06-28",
+    "url": "https://www.coursera.org/account/accomplishments/verify/82TDH4TMBB1K",
+    "code": "82TDH4TMBB1K",
+    "platform": "Coursera"
+  },
+  {
+    "title": "Git Basics for DevOps",
+    "issuer": "KodeKloud",
+    "logo": "/certs/logos/kodekloud.png",
+    "image": "/certs/images/git-basics-for-devops.jpeg",
+    "date": "2026-06-25",
+    "url": "https://www.coursera.org/account/accomplishments/verify/BK4SMY5F8OTB",
+    "code": "BK4SMY5F8OTB",
+    "platform": "Coursera"
+  },
+  {
+    "title": "DevOps Prerequisite Course",
+    "issuer": "KodeKloud",
+    "logo": "/certs/logos/kodekloud.png",
+    "image": "/certs/images/devops-prerequisite-course.jpeg",
+    "date": "2026-06-25",
+    "url": "https://www.coursera.org/account/accomplishments/verify/GWAM5OMNYPT3",
+    "code": "GWAM5OMNYPT3",
+    "platform": "Coursera"
+  },
+  {
+    "title": "Agile with Atlassian Jira",
+    "issuer": "Atlassian",
+    "logo": "/certs/logos/atlassian.png",
+    "image": "/certs/images/agile-with-atlassian-jira.jpeg",
+    "date": "2026-06-23",
+    "url": "https://www.coursera.org/account/accomplishments/verify/G855WQPZDRD8",
+    "code": "G855WQPZDRD8",
+    "platform": "Coursera"
+  },
+  {
+    "title": "Fundamentals of Red Hat Enterprise Linux",
+    "issuer": "Red Hat",
+    "logo": "/certs/logos/red-hat.png",
+    "image": "/certs/images/fundamentals-of-red-hat-enterprise-linux.jpeg",
+    "date": "2026-06-20",
+    "url": "https://www.coursera.org/account/accomplishments/verify/ZO96XI4DE693",
+    "code": "ZO96XI4DE693",
+    "platform": "Coursera"
+  },
+  {
+    "title": "Version Control with Git",
+    "issuer": "Atlassian",
+    "logo": "/certs/logos/atlassian.png",
+    "image": "/certs/images/version-control-with-git.jpeg",
+    "date": "2026-06-19",
+    "url": "https://www.coursera.org/account/accomplishments/verify/FUUE5ZMEH4SU",
+    "code": "FUUE5ZMEH4SU",
+    "platform": "Coursera"
+  }
+]

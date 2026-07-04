@@ -1,5 +1,6 @@
 ---
 title: "God Backdoor / God Receipts — Discord Order & Ticketing Automation"
+logo: "/projects/logos/god-backdoor-god-receipts-discord-order-ticketing-automation.png"
 org: "god-backdoor"
 category: "Automation / Bot Platform"
 tags: ["JavaScript", "Discord.js", "React", "Vite", "Strapi", "Docker", "Docker Compose", "CI/CD", "Node.js", "Automation", "Email/SMTP", "OAuth2"]

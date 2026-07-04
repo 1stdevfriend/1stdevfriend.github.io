@@ -1,5 +1,6 @@
 ---
 title: "Koders Website (v5/v6, all variants incl. X6 & KodersWebLab)"
+logo: "/projects/logos/koders-website-v5-v6-all-variants-incl-x6-kodersweblab.png"
 org: "koders / koders-in / kodersweblab"
 category: "Frontend / Corporate Website"
 tags: ["Next.js", "React", "Tailwind CSS", "FFmpeg", "Video Processing", "Docker", "Nginx", "Material-UI", "Bootstrap", "Frontend", "Forms"]

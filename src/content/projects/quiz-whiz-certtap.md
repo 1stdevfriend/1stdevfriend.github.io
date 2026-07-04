@@ -1,5 +1,6 @@
 ---
 title: "Quiz Whiz (CertTap)"
+logo: "/projects/logos/quiz-whiz-certtap.png"
 org: "ablative_technologies"
 category: "Full Stack / EdTech Platform"
 tags: ["React", "TypeScript", "Supabase", "PostgreSQL", "Tailwind CSS", "Stripe", "Vite", "Drone CI", "SonarQube", "Sentry", "RBAC", "REST API", "Edge Functions"]

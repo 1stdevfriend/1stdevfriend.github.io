@@ -1,0 +1,45 @@
+name: Add Certification
+
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: 'Coursera certificate share URL(s) — separate multiple with spaces, commas, or newlines'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  add-certification:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Add certification(s)
+        run: |
+          urls=$(echo "${{ inputs.urls }}" | tr ',\n' '  ')
+          node scripts/add-certification.mjs $urls
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/data/certifications.json public/certs
+          if git diff --cached --quiet; then
+            echo "No changes to commit (certificate already present or fetch failed)."
+            exit 0
+          fi
+          git commit -m "Add certification(s) via workflow_dispatch"
+          git push

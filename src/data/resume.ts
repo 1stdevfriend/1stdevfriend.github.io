@@ -63,14 +63,16 @@ export const keyProjects = [
   },
 ];
 
+// Certifications without a public verification link. Verified, linkable
+// certificates (Coursera etc.) live in src/data/certifications.json and are
+// added via `node scripts/add-certification.mjs <share-url>` or the
+// "Add Certification" GitHub Action — see README.
 export const certifications = [
   'AWS Solutions Architect',
   'CKAD',
   'Terraform Fundamentals',
   'IBM Applied DevOps Engineering',
   'DevOps Mastery',
-  'Red Hat Enterprise Linux',
-  'Advanced Git & GitHub',
 ];
 
 export const education = {

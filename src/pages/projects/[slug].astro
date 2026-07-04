@@ -25,13 +25,24 @@ const description =
       &larr; All projects
     </a>
 
-    <div class="mt-6 flex flex-wrap items-start justify-between gap-3">
-      <h1 class="text-3xl font-bold text-slate-900 dark:text-slate-100">{data.title}</h1>
-      {data.featured && (
-        <span class="rounded-full bg-cyan-600 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white dark:bg-cyan-500 dark:text-slate-950">
-          Featured
-        </span>
+    <div class="mt-6 flex items-start gap-4">
+      {data.logo && (
+        <img
+          src={data.logo}
+          alt=""
+          width="56"
+          height="56"
+          class="h-14 w-14 shrink-0 rounded-xl border border-slate-100 bg-white object-contain p-1.5 dark:border-slate-800"
+        />
       )}
+      <div class="flex flex-1 flex-wrap items-start justify-between gap-3">
+        <h1 class="text-3xl font-bold text-slate-900 dark:text-slate-100">{data.title}</h1>
+        {data.featured && (
+          <span class="rounded-full bg-cyan-600 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white dark:bg-cyan-500 dark:text-slate-950">
+            Featured
+          </span>
+        )}
+      </div>
     </div>
 
     <p class="mt-2 font-mono text-sm uppercase tracking-wide text-slate-400 dark:text-slate-500">

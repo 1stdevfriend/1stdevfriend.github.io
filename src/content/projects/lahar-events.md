@@ -1,5 +1,6 @@
 ---
 title: "Lahar Events"
+logo: "/projects/logos/lahar-events.png"
 org: "koders-in"
 category: "Frontend / Marketing Website"
 tags: ["React", "JavaScript", "Docker", "Nginx", "Bootstrap", "Responsive Design", "Frontend"]

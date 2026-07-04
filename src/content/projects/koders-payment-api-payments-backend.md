@@ -4,7 +4,7 @@ org: "koders / koders-in"
 category: "Backend / FinTech Internal Tool"
 tags: ["Node.js", "Express", "React", "TypeScript", "Docker", "CI/CD", "SonarQube", "REST API", "PDF Generation", "Payments", "Wise API", "Discord Webhooks"]
 complexity: "High"
-repos: ["koders/payments", "koders-in/Koders Payments Backend"]
+repos: ["koders/payments", "koders-in/Payments-Backend"]
 featured: false
 order: 13
 notes: "Merged duplicate 'Koders Payments Backend' (koders-in) into this entry."

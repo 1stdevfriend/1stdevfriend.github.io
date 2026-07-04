@@ -2,7 +2,10 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ProjectCard from '../components/ProjectCard.astro';
 import { getCollection } from 'astro:content';
-import { profile, skills, experience, keyProjects } from '../data/resume';
+import { profile, skills, experience, keyProjects, certifications } from '../data/resume';
+import verifiedCerts from '../data/certifications.json';
+
+const totalCertifications = certifications.length + verifiedCerts.length;
 
 const allProjects = await getCollection('projects');
 const featured = allProjects
@@ -72,7 +75,7 @@ const skillGroups = Object.entries(skills);
         ['4+', 'Years Experience'],
         ['200+', 'Production Services Managed'],
         ['37', 'Highlighted Projects'],
-        ['7', 'Certifications'],
+        [String(totalCertifications), 'Certifications'],
       ].map(([stat, label]) => (
         <div>
           <p class="font-mono text-3xl font-bold text-cyan-600 dark:text-cyan-400">{stat}</p>
@@ -116,6 +119,7 @@ const skillGroups = Object.entries(skills);
           tags={project.data.tags}
           complexity={project.data.complexity}
           featured={project.data.featured}
+          logo={project.data.logo}
         />
       ))}
     </div>

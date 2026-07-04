@@ -64,6 +64,25 @@ If you later move to a custom domain, add a `public/CNAME` file with the domain 
 and update `site` in `astro.config.mjs` accordingly (no `base` path needed either way
 for a root/custom-domain site).
 
+## Adding certifications
+
+Verified certificates (currently 9 from Coursera) live in `src/data/certifications.json`
+and render on the About page, each linking out to its public Coursera verification page.
+Unlinked certifications (no public URL) stay as plain strings in `src/data/resume.ts`.
+
+To add more, either:
+
+- **Locally**: `node scripts/add-certification.mjs <coursera-share-url> [<url> ...]`
+  — fetches the share page, extracts title/issuer/date, downloads the issuer logo and
+  certificate image into `public/certs/`, and appends the entry to `certifications.json`.
+- **From GitHub**: run the **"Add Certification"** workflow (Actions tab → Run workflow),
+  pasting one or more Coursera share URLs (space/comma/newline separated). It runs the
+  same script and commits the result directly to `main`.
+
+Only Coursera share URLs are supported today (the script reads Coursera's embedded
+Apollo GraphQL state for the issuer name/logo and completion timestamp). Other
+platforms would need their own parser in `scripts/add-certification.mjs`.
+
 ## SEO
 
 - Per-page meta description/canonical/Open Graph/Twitter Card via `src/components/Seo.astro`.

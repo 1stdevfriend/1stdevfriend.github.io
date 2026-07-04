@@ -1,5 +1,6 @@
 ---
 title: "Link Opener"
+logo: "/projects/logos/link-opener.jpg"
 org: "koders-in"
 category: "Bot / Automation"
 tags: ["React", "Express", "MongoDB", "OAuth2", "Discord", "GitHub Actions", "CI/CD", "JavaScript", "Full Stack"]

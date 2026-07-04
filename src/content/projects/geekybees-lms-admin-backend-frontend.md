@@ -1,5 +1,6 @@
 ---
 title: "GeekyBees LMS (Admin / Backend / Frontend)"
+logo: "/projects/logos/geekybees-lms-admin-backend-frontend.svg"
 org: "geekybees"
 category: "Full Stack / EdTech Platform"
 tags: ["React", "TypeScript", "Supabase", "PostgreSQL", "Vite", "Vercel", "Admin Dashboard", "EdTech", "Node.js", "Express", "REST API", "Razorpay", "Payments", "Render", "CI/CD", "E-commerce"]

@@ -6,7 +6,7 @@ export const profile = {
   email: 'kartikmysterio@gmail.com',
   phone: '+91 78198 00649',
   linkedin: 'https://linkedin.com/in/kartikey-kushwah-57283614b',
-  github: 'https://github.com/lstdevfriend',
+  github: 'https://github.com/1stdevfriend',
   summary:
     'Senior DevOps & Platform Engineer with 6+ years of experience designing, automating and maintaining high-availability infrastructure across AWS, Kubernetes and Hetzner bare-metal environments. Strong background in Infrastructure as Code, CI/CD, observability, open-source platforms and production operations for enterprise, startup and government clients.',
 };

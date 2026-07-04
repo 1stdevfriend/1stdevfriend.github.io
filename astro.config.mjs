@@ -6,7 +6,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://lstdevfriend.github.io',
+  site: 'https://1stdevfriend.github.io',
   vite: {
     plugins: [tailwindcss()],
     server: {
@@ -16,5 +16,9 @@ export default defineConfig({
     },
   },
 
-  integrations: [sitemap()]
+  integrations: [
+    sitemap({
+      filter: (page) => !page.includes('/resume-print'),
+    }),
+  ]
 });

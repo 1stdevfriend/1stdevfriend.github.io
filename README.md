@@ -43,19 +43,36 @@ GitHub Pages.
 ## Editing content
 
 - **Projects**: add/edit markdown files in `src/content/projects/`. Frontmatter fields:
-  `title`, `org`, `category`, `tags`, `complexity`, `repos`, `featured`, `order`, `notes`.
-  The markdown body is the "My Role" narrative shown on the project detail page.
+  `title`, `logo` (optional path under `public/projects/logos/`), `org`, `category`, `tags`,
+  `complexity`, `repos`, `featured`, `order`, `liveUrl` (optional). The markdown body
+  (written as a bullet list) is the "My Role" narrative shown on the project detail page.
 - **Resume data** (skills, experience, certifications, education, contact links):
   edit `src/data/resume.ts`.
-- **Resume PDF**: the header links to `/kartikey-kushwah-resume.pdf` — drop a PDF at
-  `public/kartikey-kushwah-resume.pdf` to make that link work.
+- **Resume PDF**: the header links to `/kartikey-kushwah-resume.pdf`, generated from
+  `src/pages/resume-print.astro` (a print-only page driven by the same `resume.ts` data,
+  excluded from the sitemap). To regenerate after editing `resume.ts`:
+  ```sh
+  npm run build && npx astro preview --port 4322 &
+  npx -y playwright install chromium  # first time only
+  node -e "
+    const { chromium } = require('playwright');
+    (async () => {
+      const browser = await chromium.launch();
+      const page = await browser.newPage();
+      await page.goto('http://localhost:4322/resume-print/', { waitUntil: 'networkidle' });
+      await page.pdf({ path: 'public/kartikey-kushwah-resume.pdf', format: 'A4', printBackground: true, margin: { top: '0mm', bottom: '0mm', left: '0mm', right: '0mm' } });
+      await browser.close();
+    })();
+  "
+  npm run build  # rebuild so dist/ picks up the new PDF
+  ```
 
 ## Deploying to GitHub Pages
 
-This repo is configured for a **root user site** (`lstdevfriend.github.io`), so
-`astro.config.mjs` sets `site: 'https://lstdevfriend.github.io'` with no `base` path.
+This repo is configured for a **root user site** (`1stdevfriend.github.io`), so
+`astro.config.mjs` sets `site: 'https://1stdevfriend.github.io'` with no `base` path.
 
-1. Create a GitHub repo named exactly `lstdevfriend.github.io`.
+1. Create a GitHub repo named exactly `1stdevfriend.github.io`.
 2. Push this project to it (`git remote add origin ...`, `git push -u origin main`).
 3. In the repo's Settings → Pages, set the source to **GitHub Actions**.
 4. Push to `main` — `.github/workflows/deploy.yml` builds and deploys automatically.

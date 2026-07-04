@@ -9,4 +9,7 @@ featured: false
 order: 9
 ---
 
-Managed the payment system and database structuring. Built CI/CD and AWS deployment across multiple interconnected EC2 instances (created the configs and connections between them). Held client meetings; acted as team lead.
+- Managed the payment system and database structuring.
+- Built CI/CD and AWS deployment across multiple interconnected EC2 instances (created the configs and connections between them).
+- Held client meetings.
+- Acted as team lead.

@@ -9,4 +9,6 @@ featured: false
 order: 34
 ---
 
-Managed the project as scrum master, checked deliverables, and tested the application.
+- Managed the project as scrum master.
+- Checked deliverables.
+- Tested the application.

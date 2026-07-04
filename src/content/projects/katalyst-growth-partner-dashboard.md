@@ -10,4 +10,6 @@ featured: false
 order: 31
 ---
 
-Created this dashboard, wrote documentation/rules/guidelines, and built the business logic on top of it.
+- Created this dashboard.
+- Wrote documentation, rules, and guidelines.
+- Built the business logic on top of it.

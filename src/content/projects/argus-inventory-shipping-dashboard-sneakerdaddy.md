@@ -10,4 +10,10 @@ featured: false
 order: 20
 ---
 
-Created the Dockerfile for auto-deployment. Managed the database and its structuring; built DB backups via the MEGA (MegaNZ) API. Set up RabbitMQ for faster transactions. Fixed technical debt, built API endpoints, handled Strapi management. Deployed connecting domain + VPS using Let's Encrypt and Nginx.
+- Created the Dockerfile for auto-deployment.
+- Managed the database and its structuring.
+- Built DB backups via the MEGA (MegaNZ) API.
+- Set up RabbitMQ for faster transactions.
+- Fixed technical debt and built API endpoints.
+- Handled Strapi management.
+- Deployed the site, connecting domain + VPS using Let's Encrypt and Nginx.

@@ -9,4 +9,4 @@ featured: false
 order: 24
 ---
 
-Personal project - created for accepting donations during personal gaming/streaming.
+- Personal project, created for accepting donations during personal gaming/streaming.

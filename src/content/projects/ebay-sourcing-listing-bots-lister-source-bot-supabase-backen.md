@@ -10,4 +10,8 @@ featured: false
 order: 36
 ---
 
-Created and solely managed the project, fixed bugs, and built multiple automation scripts (another developer built base functionality alongside). Set up MinIO and Redis connections plus Supabase; created database backups; built the sourcing/checkout flow that lists products on eBay using Amazon scraper APIs.
+- Created and solely managed the project.
+- Fixed bugs and built multiple automation scripts (another developer built the base functionality alongside).
+- Set up MinIO and Redis connections plus Supabase.
+- Created database backups.
+- Built the sourcing/checkout flow that lists products on eBay using Amazon scraper APIs.

@@ -10,4 +10,7 @@ featured: false
 order: 30
 ---
 
-Sole creator, built with Supabase database management; envisioned and designed for better employee productivity. Includes work-session tracking, timer, tracker, notes, todo send/receive, break system, and attendance.
+- Sole creator.
+- Built with Supabase database management.
+- Envisioned and designed for better employee productivity.
+- Includes work-session tracking, timer, tracker, notes, todo send/receive, break system, and attendance.

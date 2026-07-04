@@ -10,4 +10,7 @@ featured: false
 order: 35
 ---
 
-Deployed the frontend, DB, and backend on AWS Lightsail. Optimized the codebase and researched/implemented features including kiosk mode and bug tracking. Acted as scrum master.
+- Deployed the frontend, DB, and backend on AWS Lightsail.
+- Optimized the codebase.
+- Researched and implemented features including kiosk mode and bug tracking.
+- Acted as scrum master.

@@ -11,4 +11,6 @@ featured: false
 order: 10
 ---
 
-Handled deployment over VPS; connected domains via Cloudflare Tunnel (api., app., admin.geekybees.com); wrote Drone CI/CD configs for auto-deployment of the whole system.
+- Handled deployment over VPS.
+- Connected domains via Cloudflare Tunnel (api., app., admin.geekybees.com).
+- Wrote Drone CI/CD configs for auto-deployment of the whole system.

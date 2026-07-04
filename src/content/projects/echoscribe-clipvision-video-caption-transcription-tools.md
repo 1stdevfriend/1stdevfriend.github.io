@@ -9,4 +9,5 @@ featured: false
 order: 8
 ---
 
-Researched overlay-rendering approaches, evaluating Lottie, OpenGL, and FFmpeg for the video-captioning product. Acted as scrum master managing the project.
+- Researched overlay-rendering approaches, evaluating Lottie, OpenGL, and FFmpeg for the video-captioning product.
+- Acted as scrum master managing the project.

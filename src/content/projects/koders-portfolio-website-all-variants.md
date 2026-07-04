@@ -11,4 +11,6 @@ featured: false
 order: 14
 ---
 
-Added case studies, did testing and project management, and provided the original/real project data shown on the website.
+- Added case studies.
+- Did testing and project management.
+- Provided the original/real project data shown on the website.

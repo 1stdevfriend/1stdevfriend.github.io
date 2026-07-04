@@ -10,4 +10,4 @@ featured: false
 order: 23
 ---
 
-Helped the frontend developer write optimized code for handling large amounts of data.
+- Helped the frontend developer write optimized code for handling large amounts of data.

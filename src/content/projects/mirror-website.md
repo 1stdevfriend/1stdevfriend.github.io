@@ -9,4 +9,6 @@ featured: false
 order: 18
 ---
 
-Managed the project, envisioned it, and provided real-time data for the site.
+- Managed the project.
+- Envisioned it.
+- Provided real-time data for the site.

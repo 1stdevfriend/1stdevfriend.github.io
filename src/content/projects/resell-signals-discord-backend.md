@@ -10,4 +10,5 @@ featured: false
 order: 37
 ---
 
-Sole creator and manager. Discord bot for forwarding and pinging messages.
+- Sole creator and manager.
+- Discord bot for forwarding and pinging messages.

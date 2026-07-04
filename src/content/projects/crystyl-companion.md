@@ -10,4 +10,6 @@ featured: false
 order: 21
 ---
 
-Built the Electron app for automation; wrote all the pseudocode for the frontend implementation; guided the project as scrum master.
+- Built the Electron app for automation.
+- Wrote all the pseudocode for the frontend implementation.
+- Guided the project as scrum master.

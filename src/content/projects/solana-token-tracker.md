@@ -9,4 +9,4 @@ featured: false
 order: 19
 ---
 
-Scrum management only.
+- Scrum management only.

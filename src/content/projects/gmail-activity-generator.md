@@ -10,4 +10,5 @@ featured: false
 order: 25
 ---
 
-IMAP & SMTP automation dashboard. Acted as team lead and managed the overall project vision.
+- Built an IMAP & SMTP automation dashboard.
+- Acted as team lead and managed the overall project vision.

@@ -9,4 +9,4 @@ featured: false
 order: 22
 ---
 
-Created and managed this open-source dark-mode Redmine theme for the company's internal Redmine instance.
+- Created and managed this open-source dark-mode Redmine theme for the company's internal Redmine instance.

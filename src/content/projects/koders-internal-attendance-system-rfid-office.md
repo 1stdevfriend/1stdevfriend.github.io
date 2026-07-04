@@ -9,6 +9,9 @@ featured: true
 order: 3
 ---
 
-Sole creator across the stack. Arduino/ESP8266 firmware for RFID reader/writer for office attendance. Backend: handles encryption-secret management and webhook signature verification so attendance webhooks can't be spoofed. Frontend: React dashboard (role folded into the same sole-developer effort).
+- Sole creator across the stack.
+- **Arduino/ESP8266 firmware** for the RFID reader/writer used for office attendance.
+- **Backend:** Handles encryption-secret management and webhook signature verification so attendance webhooks can't be spoofed.
+- **Frontend:** React dashboard (built as part of the same sole-developer effort).
 
 This is Koders' internal office attendance tool, distinct from the separate RFID system built for the Indian Army.

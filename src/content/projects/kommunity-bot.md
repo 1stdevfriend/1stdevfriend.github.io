@@ -9,4 +9,5 @@ featured: false
 order: 16
 ---
 
-Sole creator. Discord bot that forwards RSS feeds.
+- Sole creator.
+- Discord bot that forwards RSS feeds.

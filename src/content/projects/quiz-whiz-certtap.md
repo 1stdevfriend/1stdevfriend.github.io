@@ -11,4 +11,7 @@ featured: false
 order: 6
 ---
 
-Added multi-domain support; fixed bugs across the site; fixed Supabase authentication (resolved intermittent login issues). Confirmed via 29 commits in git log: Sentry/GlitchTip integration, SonarQube support, Drone CI config for Vercel deployment on develop, dark-theme support, business/'For Teams' page, blog->Ghost redirect, subscription route bypass, theme toggle.
+- Added multi-domain support.
+- Fixed bugs across the site.
+- Fixed Supabase authentication (resolved intermittent login issues).
+- Confirmed via 29 commits in git log: Sentry/GlitchTip integration, SonarQube support, Drone CI config for Vercel deployment on develop, dark-theme support, business/'For Teams' page, blog→Ghost redirect, subscription route bypass, theme toggle.

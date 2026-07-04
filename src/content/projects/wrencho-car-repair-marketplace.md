@@ -9,6 +9,10 @@ featured: true
 order: 5
 ---
 
-Sole backend developer on the Strapi 4 API (wrencho-be): mechanic/field-officer/customer accounts, car & vehicle profiles, bookings, cart, offers, service catalogs; integrated Paytm payments, Google Distance Matrix/geo-distance for mechanic-distance calculations, Socket.IO real-time updates, AWS CloudFront uploads, Sentry monitoring, i18n. Set up CI/CD for auto-deployment of Strapi & the mobile apps, plus backups; designed data-structure/singleton patterns post-alpha so the mobile frontend dev could extend features. On the customer-facing User App: acted as scrum/project manager, held client meetings.
+- **Strapi 4 API (wrencho-be) — sole backend developer:** mechanic/field-officer/customer accounts, car & vehicle profiles, bookings, cart, offers, and service catalogs.
+- Integrated Paytm payments, Google Distance Matrix/geo-distance for mechanic-distance calculations, Socket.IO real-time updates, AWS CloudFront uploads, Sentry monitoring, and i18n.
+- Set up CI/CD for auto-deployment of Strapi & the mobile apps, plus backups.
+- Designed data-structure/singleton patterns post-alpha so the mobile frontend developer could extend features.
+- **User App (customer-facing):** Acted as scrum/project manager, held client meetings.
 
 Named as a key project in my resume: AWS infrastructure, Docker, monitoring, Strapi CMS, and mobile release pipelines.

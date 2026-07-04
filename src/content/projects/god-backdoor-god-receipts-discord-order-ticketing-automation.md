@@ -10,4 +10,5 @@ featured: false
 order: 11
 ---
 
-God Backdoor: sole developer, deployed over VPS; React app connected via Strapi, covering order processing, dropshipping tickets, webhook notifications. God Receipts: handled deployment and acted as team lead for project management/guidance; built the infra for the app plus tickets/support through delivery.
+- **God Backdoor:** Sole developer; deployed over VPS; React app connected via Strapi, covering order processing, dropshipping tickets, and webhook notifications.
+- **God Receipts:** Handled deployment; acted as team lead for project management/guidance; built the infra for the app plus tickets/support through delivery.

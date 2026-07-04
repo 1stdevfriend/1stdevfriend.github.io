@@ -9,6 +9,7 @@ featured: false
 order: 26
 ---
 
-Sole creator, envisioned solely. Used to visualize company finances, work/tickets, website traffic, attendance, and more.
+- Sole creator, envisioned solely.
+- Used to visualize company finances, work/tickets, website traffic, attendance, and more.
 
 This directly reflects the Prometheus/Grafana observability experience listed in my resume.

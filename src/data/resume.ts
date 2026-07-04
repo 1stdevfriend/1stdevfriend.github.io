@@ -1,8 +1,8 @@
 export const profile = {
   name: 'Kartikey Kushwah',
   title: 'Senior DevOps & Platform Engineer (SRE)',
-  location: 'Dehradun, India (Relocating to Germany)',
-  relocation: 'Actively relocating to Germany (Saarbrücken region). Available for remote and onsite roles across Germany.',
+  location: 'Dehradun, India (Relocating to Germany & Luxembourg)',
+  relocation: 'Actively relocating to Germany and Luxembourg. Available for remote and onsite roles across both countries.',
   email: 'kartikmysterio@gmail.com',
   phone: '+91 78198 00649',
   linkedin: 'https://linkedin.com/in/kartikey-kushwah-57283614b',

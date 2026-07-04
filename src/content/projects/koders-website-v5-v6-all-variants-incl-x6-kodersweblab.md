@@ -1,0 +1,13 @@
+---
+title: "Koders Website (v5/v6, all variants incl. X6 & KodersWebLab)"
+org: "koders / koders-in / kodersweblab"
+category: "Frontend / Corporate Website"
+tags: ["Next.js", "React", "Tailwind CSS", "FFmpeg", "Video Processing", "Docker", "Nginx", "Material-UI", "Bootstrap", "Frontend", "Forms"]
+complexity: "Medium"
+repos: ["koders/Website", "koders-in/X6-Koders-site", "kodersweblab/website"]
+featured: false
+order: 15
+notes: "Merged X6-Koders-site and KodersWebLab v6 duplicates into this entry per user's instruction."
+---
+
+Envisioned and designed the site, tested it, provided real-time data, and guided multiple iterations through research and management. Later v6 (AI-based): integrated Typeform, user integration, PostHog telemetry, SMTP support.

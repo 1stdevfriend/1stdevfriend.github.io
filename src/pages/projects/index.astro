@@ -1,0 +1,85 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProjectCard from '../../components/ProjectCard.astro';
+import { getCollection } from 'astro:content';
+
+const allProjects = (await getCollection('projects')).sort((a, b) => a.data.order - b.data.order);
+
+function bucket(category: string) {
+  return category.split('/')[0].trim();
+}
+
+const buckets = Array.from(new Set(allProjects.map((p) => bucket(p.data.category)))).sort();
+---
+
+<BaseLayout
+  title="Projects"
+  description="A curated portfolio of DevOps, platform engineering, and full-stack projects built across enterprise, startup, and government clients."
+>
+  <section class="mx-auto max-w-5xl px-6 py-16">
+    <h1 class="text-3xl font-bold text-slate-900 dark:text-slate-100">Projects</h1>
+    <p class="mt-3 max-w-2xl text-slate-500 dark:text-slate-400">
+      {allProjects.length} curated projects spanning infrastructure, platform engineering, and full-stack
+      development &mdash; drawn from real repository history.
+    </p>
+
+    <div class="mt-8 flex flex-wrap gap-2" id="filter-bar">
+      <button
+        type="button"
+        data-filter="all"
+        class="filter-btn rounded-full border border-cyan-500 bg-cyan-500 px-3 py-1.5 text-xs font-medium text-white dark:bg-cyan-500 dark:text-slate-950"
+      >
+        All
+      </button>
+      {buckets.map((b) => (
+        <button
+          type="button"
+          data-filter={b}
+          class="filter-btn rounded-full border border-slate-300 px-3 py-1.5 text-xs font-medium text-slate-600 transition-colors hover:border-cyan-400 hover:text-cyan-600 dark:border-slate-700 dark:text-slate-300 dark:hover:border-cyan-500 dark:hover:text-cyan-400"
+        >
+          {b}
+        </button>
+      ))}
+    </div>
+
+    <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3" id="project-grid">
+      {allProjects.map((project) => (
+        <div class="project-item" data-category={bucket(project.data.category)}>
+          <ProjectCard
+            slug={project.id}
+            title={project.data.title}
+            category={project.data.category}
+            tags={project.data.tags}
+            complexity={project.data.complexity}
+            featured={project.data.featured}
+          />
+        </div>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  const buttons = document.querySelectorAll<HTMLButtonElement>('.filter-btn');
+  const items = document.querySelectorAll<HTMLDivElement>('.project-item');
+
+  function setActive(button: HTMLButtonElement) {
+    buttons.forEach((b) => {
+      b.classList.remove('bg-cyan-500', 'text-white', 'border-cyan-500', 'dark:text-slate-950');
+      b.classList.add('border-slate-300', 'text-slate-600', 'dark:border-slate-700', 'dark:text-slate-300');
+    });
+    button.classList.add('bg-cyan-500', 'text-white', 'border-cyan-500', 'dark:text-slate-950');
+    button.classList.remove('border-slate-300', 'text-slate-600', 'dark:border-slate-700', 'dark:text-slate-300');
+  }
+
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const filter = button.dataset.filter;
+      setActive(button);
+      items.forEach((item) => {
+        const show = filter === 'all' || item.dataset.category === filter;
+        item.classList.toggle('hidden', !show);
+      });
+    });
+  });
+</script>

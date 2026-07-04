@@ -1,0 +1,42 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  path?: string;
+  image?: string;
+  type?: 'website' | 'article' | 'profile';
+}
+
+const {
+  title,
+  description,
+  path = Astro.url.pathname,
+  image = '/favicon.svg',
+  type = 'website',
+} = Astro.props;
+
+const siteName = 'Kartikey Kushwah — Senior DevOps & Platform Engineer';
+const fullTitle = title === siteName ? title : `${title} | Kartikey Kushwah`;
+const canonicalURL = new URL(path, Astro.site);
+const imageURL = new URL(image, Astro.site);
+---
+
+<title>{fullTitle}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonicalURL} />
+
+<meta property="og:type" content={type} />
+<meta property="og:url" content={canonicalURL} />
+<meta property="og:title" content={fullTitle} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={imageURL} />
+<meta property="og:site_name" content={siteName} />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content={canonicalURL} />
+<meta name="twitter:title" content={fullTitle} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={imageURL} />
+
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#0f172a" />

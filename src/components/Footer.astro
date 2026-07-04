@@ -1,0 +1,22 @@
+---
+import { profile } from '../data/resume';
+
+const year = new Date().getFullYear();
+---
+
+<footer class="border-t border-slate-200 py-10 dark:border-slate-800">
+  <div class="mx-auto flex max-w-5xl flex-col items-center gap-4 px-6 text-sm text-slate-500 sm:flex-row sm:justify-between dark:text-slate-400">
+    <p>&copy; {year} {profile.name}. Built with Astro.</p>
+    <div class="flex items-center gap-5">
+      <a href={profile.github} target="_blank" rel="noopener noreferrer" class="hover:text-cyan-600 dark:hover:text-cyan-400">
+        GitHub
+      </a>
+      <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" class="hover:text-cyan-600 dark:hover:text-cyan-400">
+        LinkedIn
+      </a>
+      <a href={`mailto:${profile.email}`} class="hover:text-cyan-600 dark:hover:text-cyan-400">
+        Email
+      </a>
+    </div>
+  </div>
+</footer>

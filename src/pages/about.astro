@@ -1,0 +1,79 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { profile, skills, experience, certifications, education, languages } from '../data/resume';
+
+const skillGroups = Object.entries(skills);
+---
+
+<BaseLayout
+  title="About"
+  description={`About ${profile.name} — background, experience, certifications, and education.`}
+>
+  <section class="mx-auto max-w-3xl px-6 py-16">
+    <h1 class="text-3xl font-bold text-slate-900 dark:text-slate-100">About Me</h1>
+    <p class="mt-6 leading-relaxed text-slate-600 dark:text-slate-400">{profile.summary}</p>
+    <p class="mt-4 text-sm text-slate-500 dark:text-slate-500">{profile.relocation}</p>
+
+    <h2 class="mt-14 text-xl font-bold text-slate-900 dark:text-slate-100">Experience</h2>
+    <div class="mt-6 space-y-8">
+      {experience.map((job) => (
+        <div class="rounded-xl border border-slate-200 p-6 dark:border-slate-800">
+          <div class="flex flex-wrap items-baseline justify-between gap-2">
+            <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">{job.role}</h3>
+            <span class="font-mono text-sm text-slate-500 dark:text-slate-400">{job.period}</span>
+          </div>
+          <p class="mt-1 font-medium text-cyan-600 dark:text-cyan-400">{job.company}</p>
+          <ul class="mt-4 list-inside list-disc space-y-1.5 text-sm text-slate-600 dark:text-slate-400">
+            {job.highlights.map((h) => (
+              <li>{h}</li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+
+    <h2 class="mt-14 text-xl font-bold text-slate-900 dark:text-slate-100">Technical Skills</h2>
+    <div class="mt-6 grid gap-6 sm:grid-cols-2">
+      {skillGroups.map(([group, items]) => (
+        <div>
+          <h3 class="font-mono text-sm font-semibold uppercase tracking-wide text-cyan-600 dark:text-cyan-400">
+            {group}
+          </h3>
+          <ul class="mt-3 space-y-1.5 text-sm text-slate-600 dark:text-slate-400">
+            {items.map((item) => (
+              <li>{item}</li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+
+    <h2 class="mt-14 text-xl font-bold text-slate-900 dark:text-slate-100">Certifications</h2>
+    <ul class="mt-6 grid gap-2 sm:grid-cols-2">
+      {certifications.map((cert) => (
+        <li class="flex items-center gap-2 rounded-lg border border-slate-200 px-4 py-3 text-sm text-slate-700 dark:border-slate-800 dark:text-slate-300">
+          <svg class="h-4 w-4 shrink-0 text-cyan-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          {cert}
+        </li>
+      ))}
+    </ul>
+
+    <h2 class="mt-14 text-xl font-bold text-slate-900 dark:text-slate-100">Education</h2>
+    <div class="mt-6 rounded-xl border border-slate-200 p-6 dark:border-slate-800">
+      <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">{education.degree}</h3>
+      <p class="mt-1 font-medium text-cyan-600 dark:text-cyan-400">{education.school}</p>
+      <p class="mt-1 text-sm text-slate-500 dark:text-slate-400">{education.period} &middot; {education.gpa}</p>
+    </div>
+
+    <h2 class="mt-14 text-xl font-bold text-slate-900 dark:text-slate-100">Languages</h2>
+    <ul class="mt-6 flex flex-wrap gap-3">
+      {languages.map((lang) => (
+        <li class="rounded-full border border-slate-200 px-4 py-1.5 text-sm text-slate-600 dark:border-slate-800 dark:text-slate-300">
+          {lang.name} <span class="text-slate-400 dark:text-slate-500">&middot; {lang.level}</span>
+        </li>
+      ))}
+    </ul>
+  </section>
+</BaseLayout>

@@ -1,0 +1,187 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import { getCollection } from 'astro:content';
+import { profile, skills, experience, keyProjects } from '../data/resume';
+
+const allProjects = await getCollection('projects');
+const featured = allProjects
+  .filter((p) => p.data.featured)
+  .sort((a, b) => a.data.order - b.data.order);
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: profile.name,
+  jobTitle: profile.title,
+  url: 'https://lstdevfriend.github.io',
+  email: `mailto:${profile.email}`,
+  sameAs: [profile.linkedin, profile.github],
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Dehradun',
+    addressCountry: 'IN',
+  },
+  knowsAbout: Object.values(skills).flat(),
+};
+
+const skillGroups = Object.entries(skills);
+---
+
+<BaseLayout
+  title={`${profile.name} — ${profile.title}`}
+  description={profile.summary}
+  jsonLd={jsonLd}
+>
+  <!-- Hero -->
+  <section class="mx-auto max-w-5xl px-6 pb-16 pt-16 sm:pt-24">
+    <p class="mb-4 font-mono text-sm text-cyan-600 dark:text-cyan-400">Hi, I'm</p>
+    <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl dark:text-slate-100">
+      {profile.name}
+    </h1>
+    <h2 class="mt-3 text-xl font-medium text-slate-600 sm:text-2xl dark:text-slate-300">
+      {profile.title}
+    </h2>
+    <p class="mt-6 max-w-2xl text-base leading-relaxed text-slate-600 dark:text-slate-400">
+      {profile.summary}
+    </p>
+    <p class="mt-3 max-w-2xl text-sm text-slate-500 dark:text-slate-500">
+      📍 {profile.location}
+    </p>
+
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a
+        href="/projects/"
+        class="rounded-md bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-cyan-600 dark:bg-cyan-500 dark:text-slate-950 dark:hover:bg-cyan-400"
+      >
+        View Projects
+      </a>
+      <a
+        href="/contact/"
+        class="rounded-md border border-slate-300 px-5 py-2.5 text-sm font-semibold text-slate-700 transition-colors hover:border-cyan-400 hover:text-cyan-700 dark:border-slate-700 dark:text-slate-200 dark:hover:border-cyan-500 dark:hover:text-cyan-400"
+      >
+        Get in Touch
+      </a>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="border-y border-slate-200 bg-slate-50 py-10 dark:border-slate-800 dark:bg-slate-900/40">
+    <div class="mx-auto grid max-w-5xl grid-cols-2 gap-6 px-6 sm:grid-cols-4">
+      {[
+        ['4+', 'Years Experience'],
+        ['200+', 'Production Services Managed'],
+        ['37', 'Highlighted Projects'],
+        ['7', 'Certifications'],
+      ].map(([stat, label]) => (
+        <div>
+          <p class="font-mono text-3xl font-bold text-cyan-600 dark:text-cyan-400">{stat}</p>
+          <p class="mt-1 text-sm text-slate-500 dark:text-slate-400">{label}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Key resume projects -->
+  <section class="mx-auto max-w-5xl px-6 py-16">
+    <h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100">Key Projects</h2>
+    <p class="mt-2 text-slate-500 dark:text-slate-400">The flagship engagements from my resume.</p>
+    <div class="mt-8 grid gap-4 sm:grid-cols-2">
+      {keyProjects.map((kp) => (
+        <div class="rounded-xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900">
+          <h3 class="font-semibold text-slate-900 dark:text-slate-100">{kp.name}</h3>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">{kp.description}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Featured projects from repo analysis -->
+  <section class="mx-auto max-w-5xl px-6 py-16">
+    <div class="flex items-end justify-between">
+      <div>
+        <h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100">Featured Work</h2>
+        <p class="mt-2 text-slate-500 dark:text-slate-400">A closer look at the projects above, drawn from real repository history.</p>
+      </div>
+      <a href="/projects/" class="hidden text-sm font-medium text-cyan-600 hover:underline dark:text-cyan-400 sm:inline-block">
+        View all &rarr;
+      </a>
+    </div>
+    <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {featured.map((project) => (
+        <ProjectCard
+          slug={project.id}
+          title={project.data.title}
+          category={project.data.category}
+          tags={project.data.tags}
+          complexity={project.data.complexity}
+          featured={project.data.featured}
+        />
+      ))}
+    </div>
+    <a href="/projects/" class="mt-8 inline-block text-sm font-medium text-cyan-600 hover:underline dark:text-cyan-400 sm:hidden">
+      View all projects &rarr;
+    </a>
+  </section>
+
+  <!-- Skills -->
+  <section class="border-t border-slate-200 bg-slate-50 py-16 dark:border-slate-800 dark:bg-slate-900/40">
+    <div class="mx-auto max-w-5xl px-6">
+      <h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100">Technical Skills</h2>
+      <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {skillGroups.map(([group, items]) => (
+          <div>
+            <h3 class="font-mono text-sm font-semibold uppercase tracking-wide text-cyan-600 dark:text-cyan-400">
+              {group}
+            </h3>
+            <ul class="mt-3 space-y-1.5 text-sm text-slate-600 dark:text-slate-400">
+              {items.map((item) => (
+                <li>{item}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="mx-auto max-w-5xl px-6 py-16">
+    <h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100">Experience</h2>
+    <div class="mt-8 space-y-8">
+      {experience.map((job) => (
+        <div class="rounded-xl border border-slate-200 p-6 dark:border-slate-800">
+          <div class="flex flex-wrap items-baseline justify-between gap-2">
+            <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">{job.role}</h3>
+            <span class="font-mono text-sm text-slate-500 dark:text-slate-400">{job.period}</span>
+          </div>
+          <p class="mt-1 font-medium text-cyan-600 dark:text-cyan-400">{job.company}</p>
+          <ul class="mt-4 list-inside list-disc space-y-1.5 text-sm text-slate-600 dark:text-slate-400">
+            {job.highlights.map((h) => (
+              <li>{h}</li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+    <a href="/about/" class="mt-6 inline-block text-sm font-medium text-cyan-600 hover:underline dark:text-cyan-400">
+      More about me, certifications & education &rarr;
+    </a>
+  </section>
+
+  <!-- CTA -->
+  <section class="border-t border-slate-200 py-16 dark:border-slate-800">
+    <div class="mx-auto max-w-5xl px-6 text-center">
+      <h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100">Let's work together</h2>
+      <p class="mx-auto mt-3 max-w-xl text-slate-500 dark:text-slate-400">
+        Open to remote and onsite DevOps / Platform Engineering roles across Germany.
+      </p>
+      <a
+        href="/contact/"
+        class="mt-6 inline-block rounded-md bg-slate-900 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-cyan-600 dark:bg-cyan-500 dark:text-slate-950 dark:hover:bg-cyan-400"
+      >
+        Contact Me
+      </a>
+    </div>
+  </section>
+</BaseLayout>

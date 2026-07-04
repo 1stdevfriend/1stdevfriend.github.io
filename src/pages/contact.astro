@@ -1,0 +1,46 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { profile } from '../data/resume';
+
+const links = [
+  { label: 'Email', value: profile.email, href: `mailto:${profile.email}` },
+  { label: 'Phone', value: profile.phone, href: `tel:${profile.phone.replace(/\s+/g, '')}` },
+  { label: 'LinkedIn', value: 'kartikey-kushwah', href: profile.linkedin },
+  { label: 'GitHub', value: 'lstdevfriend', href: profile.github },
+];
+---
+
+<BaseLayout
+  title="Contact"
+  description={`Get in touch with ${profile.name} — ${profile.title}, available for remote and onsite roles across Germany.`}
+>
+  <section class="mx-auto max-w-2xl px-6 py-16">
+    <h1 class="text-3xl font-bold text-slate-900 dark:text-slate-100">Get in Touch</h1>
+    <p class="mt-4 leading-relaxed text-slate-600 dark:text-slate-400">
+      {profile.relocation} Feel free to reach out about DevOps, Platform Engineering, or SRE roles
+      &mdash; or just to say hi.
+    </p>
+
+    <div class="mt-10 grid gap-4 sm:grid-cols-2">
+      {links.map((link) => (
+        <a
+          href={link.href}
+          target={link.href.startsWith('http') ? '_blank' : undefined}
+          rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+          class="group flex flex-col rounded-xl border border-slate-200 p-5 transition-colors hover:border-cyan-400 dark:border-slate-800 dark:hover:border-cyan-500"
+        >
+          <span class="font-mono text-xs uppercase tracking-wide text-slate-400 dark:text-slate-500">
+            {link.label}
+          </span>
+          <span class="mt-1 font-medium text-slate-800 group-hover:text-cyan-700 dark:text-slate-200 dark:group-hover:text-cyan-400">
+            {link.value}
+          </span>
+        </a>
+      ))}
+    </div>
+
+    <div class="mt-10 rounded-xl border border-slate-200 bg-slate-50 p-6 text-sm text-slate-500 dark:border-slate-800 dark:bg-slate-900/40 dark:text-slate-400">
+      📍 {profile.location}
+    </div>
+  </section>
+</BaseLayout>

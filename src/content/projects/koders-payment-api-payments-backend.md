@@ -7,7 +7,6 @@ complexity: "High"
 repos: ["koders/payments", "koders-in/Payments-Backend"]
 featured: false
 order: 13
-notes: "Merged duplicate 'Koders Payments Backend' (koders-in) into this entry."
 ---
 
 Sole creator. Connected Stripe -> Wise for invoicing/payments so clients can pay directly into the Koders system. Can also generate invoices by pulling data from the Redmine invoice plugin and converting it to PDF.

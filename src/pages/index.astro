@@ -89,7 +89,7 @@ const skillGroups = Object.entries(skills);
   <section class="border-y border-slate-200 bg-slate-50 py-10 dark:border-slate-800 dark:bg-slate-900/40">
     <div class="mx-auto grid max-w-5xl grid-cols-2 gap-6 px-6 sm:grid-cols-4">
       {[
-        ['4+', 'Years Experience'],
+        ['6+', 'Years Experience'],
         ['200+', 'Production Services Managed'],
         ['37', 'Highlighted Projects'],
         [String(totalCertifications), 'Certifications'],
@@ -137,6 +137,7 @@ const skillGroups = Object.entries(skills);
           complexity={project.data.complexity}
           featured={project.data.featured}
           logo={project.data.logo}
+          liveUrl={project.data.liveUrl}
         />
       ))}
     </div>

@@ -8,7 +8,6 @@ complexity: "Medium-High"
 repos: ["koders-in/crystyl-companion"]
 featured: false
 order: 21
-notes: ""
 ---
 
 Built the Electron app for automation; wrote all the pseudocode for the frontend implementation; guided the project as scrum master.

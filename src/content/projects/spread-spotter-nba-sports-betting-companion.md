@@ -7,7 +7,6 @@ complexity: "High"
 repos: ["dream_associate/276-Spread-Spotter"]
 featured: false
 order: 9
-notes: "Strong AWS/infra example."
 ---
 
 Managed the payment system and database structuring. Built CI/CD and AWS deployment across multiple interconnected EC2 instances (created the configs and connections between them). Held client meetings; acted as team lead.

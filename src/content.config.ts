@@ -13,7 +13,7 @@ const projects = defineCollection({
     repos: z.array(z.string()).default([]),
     featured: z.boolean().default(false),
     order: z.number(),
-    notes: z.string().default(''),
+    liveUrl: z.string().optional(),
   }),
 });
 

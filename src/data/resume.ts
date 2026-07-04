@@ -8,7 +8,7 @@ export const profile = {
   linkedin: 'https://linkedin.com/in/kartikey-kushwah-57283614b',
   github: 'https://github.com/lstdevfriend',
   summary:
-    'Senior DevOps & Platform Engineer with 4+ years of experience designing, automating and maintaining high-availability infrastructure across AWS, Kubernetes and Hetzner bare-metal environments. Strong background in Infrastructure as Code, CI/CD, observability, open-source platforms and production operations for enterprise, startup and government clients.',
+    'Senior DevOps & Platform Engineer with 6+ years of experience designing, automating and maintaining high-availability infrastructure across AWS, Kubernetes and Hetzner bare-metal environments. Strong background in Infrastructure as Code, CI/CD, observability, open-source platforms and production operations for enterprise, startup and government clients.',
 };
 
 export const skills = {
@@ -31,7 +31,7 @@ export const experience = [
   {
     role: 'Senior DevOps & Full Stack Engineer',
     company: 'Koders Korp LLP',
-    period: 'Mar 2022 – Present',
+    period: '2020 – Present',
     highlights: [
       'Managed multi-cloud production infrastructure across AWS, Hetzner bare-metal, DigitalOcean and Contabo supporting 200+ production services.',
       'Designed highly available Kubernetes and Docker platforms for scalable microservices.',

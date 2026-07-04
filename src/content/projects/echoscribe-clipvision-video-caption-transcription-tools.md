@@ -7,7 +7,6 @@ complexity: "Medium"
 repos: ["clipvision/Overlay", "clipvision/Website", "koders-in/Team6-ClipVision-Backend"]
 featured: false
 order: 8
-notes: "User merged Team6-ClipVision-Backend into this ClipVision cluster."
 ---
 
 Researched overlay-rendering approaches, evaluating Lottie, OpenGL, and FFmpeg for the video-captioning product. Acted as scrum master managing the project.

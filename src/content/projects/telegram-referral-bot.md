@@ -7,7 +7,6 @@ complexity: "Medium"
 repos: ["outletdelcalcio/telegram-referral-bot"]
 featured: false
 order: 34
-notes: ""
 ---
 
 Managed the project as scrum master, checked deliverables, and tested the application.

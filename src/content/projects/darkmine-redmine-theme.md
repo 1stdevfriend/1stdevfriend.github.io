@@ -7,7 +7,6 @@ complexity: "Medium"
 repos: ["koders-in/DarkMine"]
 featured: false
 order: 22
-notes: ""
 ---
 
 Created and managed this open-source dark-mode Redmine theme for the company's internal Redmine instance.

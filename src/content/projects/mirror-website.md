@@ -7,7 +7,6 @@ complexity: "Low"
 repos: ["koders/mirror-website"]
 featured: false
 order: 18
-notes: ""
 ---
 
 Managed the project, envisioned it, and provided real-time data for the site.

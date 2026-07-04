@@ -7,7 +7,6 @@ complexity: "High"
 repos: ["koders/discord-mcp"]
 featured: false
 order: 17
-notes: ""
 ---
 
 Sole creator. Built all the MCP servers (Odoo, Invoice Ninja, EspoCRM, Redmine) and mapped them to a DeepSeek AI model.

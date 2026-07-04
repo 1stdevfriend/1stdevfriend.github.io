@@ -8,7 +8,6 @@ complexity: "Medium"
 repos: ["god-backdoor/god-backdoor", "god-backdoor/god-receipt-gen"]
 featured: false
 order: 11
-notes: ""
 ---
 
 God Backdoor: sole developer, deployed over VPS; React app connected via Strapi, covering order processing, dropshipping tickets, webhook notifications. God Receipts: handled deployment and acted as team lead for project management/guidance; built the infra for the app plus tickets/support through delivery.

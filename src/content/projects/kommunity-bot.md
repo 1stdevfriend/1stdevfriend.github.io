@@ -7,7 +7,6 @@ complexity: "Medium"
 repos: ["koders/kommunity-bot"]
 featured: false
 order: 16
-notes: ""
 ---
 
 Sole creator. Discord bot that forwards RSS feeds.

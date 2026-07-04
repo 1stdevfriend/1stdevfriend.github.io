@@ -7,7 +7,6 @@ complexity: "Low"
 repos: ["koders_internal/notifyweb", "koders_internal/pingerweb"]
 featured: false
 order: 32
-notes: ""
 ---
 
 Created these landing sites for the 'Notify' and 'Mirror'/Pinger Electron app products (sold via Hyper/Whop). The underlying apps monitor Discord chat for keyword matches, send found/not-found alerts, and can mirror/forward whole messages to the user.

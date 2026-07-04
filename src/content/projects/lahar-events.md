@@ -8,7 +8,6 @@ complexity: "Low"
 repos: ["koders-in/220-Lahar-Events"]
 featured: false
 order: 27
-notes: ""
 ---
 
 Created the marketing landing page website for this event-organizing business.

@@ -7,7 +7,6 @@ complexity: "Medium"
 repos: ["koders/koders-monitor"]
 featured: false
 order: 12
-notes: ""
 ---
 
 Sole creator. Built for monitoring other Discord servers via a self-bot, for business-chat visibility, lead-system metrics, and market analysis.

@@ -8,7 +8,6 @@ complexity: "High"
 repos: ["koders-in/159-Divine-UI"]
 featured: false
 order: 23
-notes: ""
 ---
 
 Helped the frontend developer write optimized code for handling large amounts of data.

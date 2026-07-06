@@ -9,6 +9,4 @@ featured: false
 order: 17
 ---
 
-- Sole creator.
-- Built all the MCP servers (Odoo, Invoice Ninja, EspoCRM, Redmine).
-- Mapped them to a DeepSeek AI model.
+- Sole creator — built all four MCP servers (Odoo, Invoice Ninja, EspoCRM, Redmine) and mapped them to a DeepSeek AI model for natural-language control over Discord.

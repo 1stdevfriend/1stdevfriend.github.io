@@ -1,6 +1,7 @@
 ---
 title: "Resell Signals Discord Backend"
 liveUrl: "https://resellsignals.com"
+logo: "/projects/logos/resell-signals-logo.png"
 org: "resell-signals"
 category: "Bot / Community Automation"
 tags: ["Node.js", "Express", "REST API", "Supabase", "PostgreSQL", "Razorpay", "Payments", "Render", "CI/CD"]
@@ -10,5 +11,4 @@ featured: false
 order: 37
 ---
 
-- Sole creator and manager.
-- Discord bot for forwarding and pinging messages.
+- Sole creator and maintainer of this Discord bot for forwarding and pinging messages.

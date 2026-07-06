@@ -1,6 +1,7 @@
 ---
 title: "Argus — Inventory & Shipping Dashboard (SneakerDaddy)"
 liveUrl: "https://argusoftware.com"
+logo: "/projects/logos/argus-inventory-shipping-dashboard-sneakerdaddy.svg"
 org: "koders-in / sneakerdaddy"
 category: "Full Stack / Internal Tool (Retail & Inventory)"
 tags: ["React", "TypeScript", "Node.js", "Express", "MongoDB", "RabbitMQ", "Docker", "Docker Compose", "Nginx", "Redux Toolkit", "Chart.js", "Microservices", "REST API", "Strapi", "CI/CD", "E-commerce"]
@@ -10,10 +11,7 @@ featured: false
 order: 20
 ---
 
-- Created the Dockerfile for auto-deployment.
-- Managed the database and its structuring.
-- Built DB backups via the MEGA (MegaNZ) API.
-- Set up RabbitMQ for faster transactions.
-- Fixed technical debt and built API endpoints.
-- Handled Strapi management.
-- Deployed the site, connecting domain + VPS using Let's Encrypt and Nginx.
+- Containerized the app with a custom Dockerfile for automated deployment.
+- Owned database design and structuring, plus automated backups via the MEGA (MegaNZ) API.
+- Introduced RabbitMQ to speed up transaction processing, alongside ongoing technical-debt fixes and new API endpoints.
+- Managed the Strapi CMS and deployed the full stack to a VPS, wiring up the domain with Nginx and Let's Encrypt SSL.

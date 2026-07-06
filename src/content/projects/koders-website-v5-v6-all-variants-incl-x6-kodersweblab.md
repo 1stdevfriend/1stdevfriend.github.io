@@ -11,7 +11,6 @@ featured: false
 order: 15
 ---
 
-- Envisioned and designed the site.
-- Tested it and provided real-time data.
-- Guided multiple iterations through research and management.
-- **v6 (AI-based):** Integrated Typeform, user integration, PostHog telemetry, and SMTP support.
+- Envisioned and designed the site, then guided it through multiple iterations via research, testing, and project management.
+- Supplied the real, up-to-date data shown on the site.
+- **v6 (AI-based):** Integrated Typeform, user accounts, PostHog telemetry, and SMTP support.

@@ -5,14 +5,27 @@ interface Props {
   path?: string;
   image?: string;
   type?: 'website' | 'article' | 'profile';
+  keywords?: string[];
 }
 
 const {
   title,
   description,
   path = Astro.url.pathname,
-  image = '/favicon.svg',
+  image = '/images/hero-portrait.jpeg',
   type = 'website',
+  keywords = [
+    'DevOps Engineer',
+    'Platform Engineer',
+    'Site Reliability Engineer',
+    'SRE',
+    'Kubernetes',
+    'AWS',
+    'Terraform',
+    'CI/CD',
+    'DevOps Engineer Germany',
+    'DevOps Engineer Luxembourg',
+  ],
 } = Astro.props;
 
 const siteName = 'Kartikey Kushwah — Senior DevOps & Platform Engineer';
@@ -23,6 +36,8 @@ const imageURL = new URL(image, Astro.site);
 
 <title>{fullTitle}</title>
 <meta name="description" content={description} />
+<meta name="keywords" content={keywords.join(', ')} />
+<meta name="author" content="Kartikey Kushwah" />
 <link rel="canonical" href={canonicalURL} />
 
 <meta property="og:type" content={type} />
@@ -30,13 +45,16 @@ const imageURL = new URL(image, Astro.site);
 <meta property="og:title" content={fullTitle} />
 <meta property="og:description" content={description} />
 <meta property="og:image" content={imageURL} />
+<meta property="og:image:alt" content="Kartikey Kushwah" />
 <meta property="og:site_name" content={siteName} />
+<meta property="og:locale" content="en_US" />
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:url" content={canonicalURL} />
 <meta name="twitter:title" content={fullTitle} />
 <meta name="twitter:description" content={description} />
 <meta name="twitter:image" content={imageURL} />
+<meta name="twitter:image:alt" content="Kartikey Kushwah" />
 
 <meta name="robots" content="index, follow" />
 <meta name="theme-color" content="#0f172a" />

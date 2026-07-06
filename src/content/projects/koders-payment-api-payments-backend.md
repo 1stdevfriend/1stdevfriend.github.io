@@ -9,6 +9,6 @@ featured: false
 order: 13
 ---
 
-- Sole creator.
-- Connected Stripe → Wise for invoicing/payments so clients can pay directly into the Koders system.
-- Can also generate invoices by pulling data from the Redmine invoice plugin and converting it to PDF.
+- Sole creator of this internal payments backend.
+- Connected Stripe to Wise so clients can pay invoices directly into the Koders system.
+- Generates invoices as PDFs by pulling data from the Redmine invoice plugin.

@@ -10,5 +10,5 @@ featured: false
 order: 25
 ---
 
-- Built an IMAP & SMTP automation dashboard.
-- Acted as team lead and managed the overall project vision.
+- Built an IMAP/SMTP automation dashboard for generating Gmail activity.
+- Led the team and owned the overall product vision.

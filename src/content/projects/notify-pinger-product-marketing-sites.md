@@ -9,5 +9,5 @@ featured: false
 order: 32
 ---
 
-- Created landing sites for the 'Notify' and 'Mirror'/Pinger Electron app products (sold via Hyper/Whop).
-- The underlying apps monitor Discord chat for keyword matches, send found/not-found alerts, and can mirror/forward whole messages to the user.
+- Built the marketing landing sites for the 'Notify' and 'Pinger' (formerly Mirror) Electron app products, sold via Hyper/Whop.
+- The underlying apps monitor Discord chat for keyword matches, send found/not-found alerts, and can mirror whole messages to the user.

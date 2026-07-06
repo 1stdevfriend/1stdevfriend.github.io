@@ -11,6 +11,5 @@ featured: false
 order: 14
 ---
 
-- Added case studies.
-- Did testing and project management.
-- Provided the original/real project data shown on the website.
+- Wrote the case studies and supplied the real project data shown on the site.
+- Owned testing and project management across iterations.

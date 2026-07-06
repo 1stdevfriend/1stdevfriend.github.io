@@ -9,6 +9,5 @@ featured: false
 order: 7
 ---
 
-- Project was vibe-coded (AI-assisted).
-- Acted as project manager/scrum master/product owner, relaying client user-story requirements to the developer.
-- Built with Supabase + React.
+- Acted as project manager, scrum master, and product owner — relaying client user-story requirements to the developer.
+- Built with Supabase and React, using an AI-assisted ("vibe-coded") development workflow.

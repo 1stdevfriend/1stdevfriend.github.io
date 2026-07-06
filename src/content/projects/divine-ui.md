@@ -10,4 +10,4 @@ featured: false
 order: 23
 ---
 
-- Helped the frontend developer write optimized code for handling large amounts of data.
+- Partnered with the frontend developer to optimize rendering and data handling for large real-time datasets in this bot-management dashboard.

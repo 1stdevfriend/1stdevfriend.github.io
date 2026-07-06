@@ -10,6 +10,6 @@ featured: false
 order: 21
 ---
 
-- Built the Electron app for automation.
-- Wrote all the pseudocode for the frontend implementation.
-- Guided the project as scrum master.
+- Built the Electron desktop app that drives the automation.
+- Wrote the pseudocode blueprint the frontend was implemented from.
+- Guided delivery as scrum master.

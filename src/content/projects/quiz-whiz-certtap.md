@@ -11,7 +11,6 @@ featured: false
 order: 6
 ---
 
-- Added multi-domain support.
-- Fixed bugs across the site.
-- Fixed Supabase authentication (resolved intermittent login issues).
-- Confirmed via 29 commits in git log: Sentry/GlitchTip integration, SonarQube support, Drone CI config for Vercel deployment on develop, dark-theme support, business/'For Teams' page, blog→Ghost redirect, subscription route bypass, theme toggle.
+- Added multi-domain support and fixed Supabase authentication issues that were causing intermittent login failures.
+- Shipped Sentry/GlitchTip error monitoring, SonarQube code-quality checks, and a Drone CI pipeline for Vercel deployments on the develop branch.
+- Built dark-theme support with a toggle, the business "For Teams" page, a blog→Ghost redirect, and a subscription route bypass, alongside ongoing bug fixes across the site.

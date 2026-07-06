@@ -9,4 +9,4 @@ featured: false
 order: 29
 ---
 
-- Created a webhook-based, custom-themed Stripe invoice sender, built because the business wasn't on Stripe's Pro plan but wanted custom-branded invoice emails.
+- Built a webhook-based, custom-branded Stripe invoice sender — a workaround for the business needing branded invoice emails without Stripe's Pro plan.

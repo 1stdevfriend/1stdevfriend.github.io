@@ -19,13 +19,23 @@ const jsonLd = {
   jobTitle: profile.title,
   url: 'https://1stdevfriend.github.io',
   email: `mailto:${profile.email}`,
+  telephone: profile.phone,
   sameAs: [profile.linkedin, profile.github],
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Dehradun',
     addressCountry: 'IN',
   },
+  worksFor: {
+    '@type': 'Organization',
+    name: experience[0].company,
+  },
   knowsAbout: Object.values(skills).flat(),
+  knowsLanguage: ['en', 'hi', 'de'],
+  alumniOf: {
+    '@type': 'CollegeOrUniversity',
+    name: 'UPES',
+  },
 };
 
 const skillGroups = Object.entries(skills);
@@ -33,7 +43,7 @@ const skillGroups = Object.entries(skills);
 
 <BaseLayout
   title={`${profile.name} — ${profile.title}`}
-  description={profile.summary}
+  description={profile.tagline}
   jsonLd={jsonLd}
 >
   <!-- Hero -->
@@ -91,7 +101,7 @@ const skillGroups = Object.entries(skills);
       {[
         ['6+', 'Years Experience'],
         ['200+', 'Production Services Managed'],
-        ['37', 'Highlighted Projects'],
+        [String(allProjects.length), 'Highlighted Projects'],
         [String(totalCertifications), 'Certifications'],
       ].map(([stat, label]) => (
         <div>

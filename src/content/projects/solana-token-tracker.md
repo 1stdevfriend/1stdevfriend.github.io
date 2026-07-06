@@ -9,4 +9,4 @@ featured: false
 order: 19
 ---
 
-- Scrum management only.
+- Managed delivery as scrum master; engineering handled by the team.

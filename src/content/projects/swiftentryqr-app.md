@@ -10,7 +10,5 @@ featured: false
 order: 33
 ---
 
-- Built a Flask application for QR-based event entry, handling multiple clubs and their events.
-- Recorded online payments.
-- Built the API and frontend.
-- Managed the project.
+- Built a Flask application for QR-based event entry across multiple clubs and their events, including the API and frontend.
+- Recorded online payments and managed the project end to end.

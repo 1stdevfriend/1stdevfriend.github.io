@@ -9,6 +9,5 @@ featured: false
 order: 12
 ---
 
-- Sole creator.
-- Built for monitoring other Discord servers via a self-bot.
-- Supports business-chat visibility, lead-system metrics, and market analysis.
+- Sole creator of this self-bot for monitoring other Discord servers.
+- Gives visibility into business-chat activity, lead-system metrics, and market analysis.

@@ -10,4 +10,4 @@ featured: false
 order: 27
 ---
 
-- Created the marketing landing page website for this event-organizing business.
+- Built the marketing landing page for this event-organizing business.

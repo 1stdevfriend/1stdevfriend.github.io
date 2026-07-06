@@ -10,5 +10,5 @@ featured: false
 order: 28
 ---
 
-- Built the React frontend paired with a Discord bot integration so links sent in Discord automatically open in the browser.
-- Sole developer, and managed the project.
+- Sole developer — built the React frontend paired with a Discord bot integration so links sent in Discord automatically open in the browser.
+- Managed the project end to end.

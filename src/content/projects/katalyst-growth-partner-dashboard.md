@@ -10,6 +10,5 @@ featured: false
 order: 31
 ---
 
-- Created this dashboard.
-- Wrote documentation, rules, and guidelines.
-- Built the business logic on top of it.
+- Built this internal growth-partner dashboard end to end, including the business logic layer on top of it.
+- Wrote the documentation, rules, and guidelines the team runs on.

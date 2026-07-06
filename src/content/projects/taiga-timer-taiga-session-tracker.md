@@ -10,7 +10,5 @@ featured: false
 order: 30
 ---
 
-- Sole creator.
-- Built with Supabase database management.
-- Envisioned and designed for better employee productivity.
-- Includes work-session tracking, timer, tracker, notes, todo send/receive, break system, and attendance.
+- Sole creator — envisioned and designed this productivity tool on top of Supabase.
+- Covers work-session tracking, a timer, notes, a send/receive to-do system, break tracking, and attendance.

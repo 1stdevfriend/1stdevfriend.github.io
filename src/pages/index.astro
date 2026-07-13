@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ProjectCard from '../components/ProjectCard.astro';
 import { getCollection } from 'astro:content';
-import { profile, skills, experience, keyProjects, certifications } from '../data/resume';
+import { profile, skills, experience, certifications } from '../data/resume';
 import verifiedCerts from '../data/certifications.json';
 
 const totalCertifications = certifications.length + verifiedCerts.length;
@@ -107,20 +107,6 @@ const skillGroups = Object.entries(skills);
         <div>
           <p class="font-mono text-3xl font-bold text-cyan-600 dark:text-cyan-400">{stat}</p>
           <p class="mt-1 text-sm text-slate-500 dark:text-slate-400">{label}</p>
-        </div>
-      ))}
-    </div>
-  </section>
-
-  <!-- Key resume projects -->
-  <section class="mx-auto max-w-5xl px-6 py-16">
-    <h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100">Key Projects</h2>
-    <p class="mt-2 text-slate-500 dark:text-slate-400">The flagship engagements from my resume.</p>
-    <div class="mt-8 grid gap-4 sm:grid-cols-2">
-      {keyProjects.map((kp) => (
-        <div class="rounded-xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900">
-          <h3 class="font-semibold text-slate-900 dark:text-slate-100">{kp.name}</h3>
-          <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">{kp.description}</p>
         </div>
       ))}
     </div>

@@ -1,5 +1,93 @@
 [
   {
+    "title": "DevOps Mastery Specialization",
+    "issuer": "KodeKloud",
+    "logo": "/certs/logos/kodekloud.png",
+    "date": "2026-07-26",
+    "url": "https://www.coursera.org/account/accomplishments/specialization/X4B73JGJS4A7",
+    "code": "X4B73JGJS4A7",
+    "platform": "Coursera"
+  },
+  {
+    "title": "Practical DevOps Bootcamp for All",
+    "issuer": "Packt",
+    "logo": "/certs/logos/packt.png",
+    "date": "2026-07-26",
+    "url": "https://www.coursera.org/account/accomplishments/specialization/JDNESW9ZZCNQ",
+    "code": "JDNESW9ZZCNQ",
+    "platform": "Coursera"
+  },
+  {
+    "title": "DevOps Automation, Monitoring & GitOps",
+    "issuer": "Packt",
+    "logo": "/certs/logos/packt.png",
+    "image": "/certs/images/devops-automation-monitoring-and-gitops.jpeg",
+    "date": "2026-07-25",
+    "url": "https://www.coursera.org/account/accomplishments/verify/SWRHC76NZY2P",
+    "code": "SWRHC76NZY2P",
+    "platform": "Coursera"
+  },
+  {
+    "title": "Containerization and Kubernetes for DevOps",
+    "issuer": "Packt",
+    "logo": "/certs/logos/packt.png",
+    "image": "/certs/images/containerization-and-kubernetes-for-devops.jpeg",
+    "date": "2026-07-24",
+    "url": "https://www.coursera.org/account/accomplishments/verify/LM0EJACVRJK9",
+    "code": "LM0EJACVRJK9",
+    "platform": "Coursera"
+  },
+  {
+    "title": "DevOps Foundations & Development Workflow",
+    "issuer": "Packt",
+    "logo": "/certs/logos/packt.png",
+    "image": "/certs/images/devops-foundations-and-development-workflow.jpeg",
+    "date": "2026-07-21",
+    "url": "https://www.coursera.org/account/accomplishments/verify/ZH1F2NX6L1QL",
+    "code": "ZH1F2NX6L1QL",
+    "platform": "Coursera"
+  },
+  {
+    "title": "Terraform for the Absolute Beginner with Hands-on Labs",
+    "issuer": "KodeKloud",
+    "logo": "/certs/logos/kodekloud.png",
+    "image": "/certs/images/terraform-for-the-absolute-beginner-with-hands-on-labs.jpeg",
+    "date": "2026-07-10",
+    "url": "https://www.coursera.org/account/accomplishments/verify/EDW7BY5U5GTO",
+    "code": "EDW7BY5U5GTO",
+    "platform": "Coursera"
+  },
+  {
+    "title": "Intermediate Git and GitHub Workflow",
+    "issuer": "Packt",
+    "logo": "/certs/logos/packt.png",
+    "image": "/certs/images/intermediate-git-and-github-workflow.jpeg",
+    "date": "2026-07-10",
+    "url": "https://www.coursera.org/account/accomplishments/verify/JMC3FR1MKHT1",
+    "code": "JMC3FR1MKHT1",
+    "platform": "Coursera"
+  },
+  {
+    "title": "Ansible for the Absolute Beginners",
+    "issuer": "KodeKloud",
+    "logo": "/certs/logos/kodekloud.png",
+    "image": "/certs/images/ansible-for-the-absolute-beginners.jpeg",
+    "date": "2026-07-09",
+    "url": "https://www.coursera.org/account/accomplishments/verify/4GZBRXV1L8RM",
+    "code": "4GZBRXV1L8RM",
+    "platform": "Coursera"
+  },
+  {
+    "title": "Kubernetes Basics for DevOps",
+    "issuer": "KodeKloud",
+    "logo": "/certs/logos/kodekloud.png",
+    "image": "/certs/images/kubernetes-basics-for-devops.jpeg",
+    "date": "2026-07-08",
+    "url": "https://www.coursera.org/account/accomplishments/verify/AVNTCT7CSDIH",
+    "code": "AVNTCT7CSDIH",
+    "platform": "Coursera"
+  },
+  {
     "title": "Advanced Git and GitHub Features",
     "issuer": "Packt",
     "logo": "/certs/logos/packt.png",
